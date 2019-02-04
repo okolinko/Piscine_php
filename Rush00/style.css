@@ -1,0 +1,423 @@
+body
+{
+	background-color: #F5F5F5;
+	font-family:Verdana, Tahoma;
+	background-image: url(http://bgfons.com/upload/iron_texture1743.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+fieldset
+{
+	margin: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	background-image: url(http://h2.hqtexture.com/104/10374/thumbs/1458556419-shutterstock-128127866.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+select
+{
+	font-size: 8px;
+}
+
+table, td, th
+{
+	border: 1px solid #cccccc;
+}
+
+table
+{
+	width: 550px;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+
+td, th
+{
+	vertical-align: middle;
+	height: 30px;
+	padding: 5px;
+	text-align: center;
+	background-color: #F0F8FF;
+}
+
+th
+{
+	background-color:#fefecc;
+}
+
+#content hr
+{
+	color: red;
+    background-color: red;
+    border: none;
+    height: 2px;
+}
+
+#wrapper
+{
+	border: 5px solid #2F4F4F;
+	width: 990px;
+	margin: 0px auto;
+	padding: 5px 10px;
+	background-color: #D3D3D3;
+	box-shadow: 15px 15px 15px black;
+}
+
+.basket
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+}
+
+.basket-count
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: red;
+	font-size: 9px;
+}
+
+#header
+{
+	height: 250px;
+	background-image: url(https://www.firestock.ru/wp-content/uploads/2013/07/shutterstock_133602722.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	position: relative; 
+	border: 1px solid black;
+	box-shadow: 0 0 5px;
+}
+
+#header-img
+{
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+}
+
+.imgblock1
+{
+	width: 50%;
+	border-radius: 15px;
+	height: 100%;
+	min-width: 250px;
+	min-height: 150px
+}
+
+.imgblock2
+{
+	width: 50%;
+	border-radius: 15px;
+	height: 100%;
+	min-width: 200px;
+	min-height: 100px
+}
+
+.usertext
+{
+	color: yellow;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 15px;
+}
+
+#menu
+{
+	/*height: 250px;*/
+	width: 200px;
+	background-image: url(https://www.firestock.ru/wp-content/uploads/2013/07/shutterstock_133602722.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+	margin-bottom: 5px;
+	box-shadow: 0 0 5px;
+	border: 1px solid black;
+	padding: 0 2px;
+	padding-top: 2px;
+}
+
+.emptyspace
+{
+	height: 20px;
+}
+
+.menubutton
+{
+	height: 35px;
+	border: 2px solid black;
+	background: linear-gradient(to top, snow, black 36%, snow);
+	margin-bottom: 1px;
+	border-radius: 5px;
+
+}
+.menubutton:hover
+{
+	border: 4px ridge;
+
+}
+
+.authtext
+{
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.regtext
+{
+	line-height: 30px;
+	color: white;
+	text-align: center;
+}
+
+#content
+{
+	margin-left: 208px;
+	width: 780px;
+	background-image: url(https://www.firestock.ru/wp-content/uploads/2013/07/shutterstock_133602722.jpg
+	);
+	margin-bottom: 5px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px;
+	padding-top: 15px;
+	position: relative;
+}
+
+.product
+{
+	border: 2px solid #708090;
+	width: 180px;
+	height: 200px;
+	margin: 0 0 15px 5px;
+	position: relative;
+	display: inline-block;
+	background-color: #C0C0C0;
+}
+
+.product-sort
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.product-page
+{
+	position: absolute;
+	top: 0;
+	right: 130px;
+	left: 500px;
+}
+
+.product-buy
+{
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	padding-top: 0;
+	color: #32CD32;
+	font-size: 12px;
+}
+
+.product-name
+{
+	font-size: 15px;
+	position: absolute;
+	width: 130px;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.product-price
+{
+	width: 120px;
+	text-align: center;
+	font-size: 10px;
+	position: absolute;
+	left: 50%;
+	bottom: 13%;
+	transform: translate(-50%,-20%);
+}
+
+.product-img
+{
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #708090;
+	width: 100px;
+	height: 130px;
+}
+
+.product-button
+{
+	width: 80px;
+    height: 20px;
+    border: 1px solid black;
+	text-align: center;
+	font-size: 10px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,-20%);
+}
+
+
+content p
+  {
+	  display: block;
+	color: yellow;
+
+  }
+legend{
+	color: yellow;
+}
+
+content input{
+	background: darkslategrey;
+	padding: 12px 2px 12px 15px;
+	padding-left: 35px;
+	margin: 0 0 10px 5px;
+	width: 85%;
+	border: 1px solid rebeccapurple;
+	border-radius: 5px;
+	color: snow;
+	outline: none;
+}
+#passw_im{
+	background-position: 1px -2px !important;
+	background: darkslategrey url(http://s1.iconbird.com/ico/0612/MustHave/w256h2561339195787Key256x256.png) no-repeat center left;
+	background-size: auto 90%;
+}
+#email_im{
+	 background-position: -1px -2px !important;
+	 background: darkslategrey url(https://maxcdn.icons8.com/Color/PNG/96/Business/feedback-96.png) no-repeat center left;
+	 background-size: auto 90%;
+
+ }
+#login_im{
+	background-position: -2px -2px !important;
+	background: darkslategrey url(https://api.icons8.com/download/0b385833e57daaf6184202662867d9b440e27a8b/office/PNG/512/Very_Basic/contact-512.png) no-repeat center left;
+	background-size: auto 90%;
+
+}
+#admin_im{
+	background: darkslategrey;
+	height: 20px;
+	width: 150px;
+	border: 2px solid black;
+	border-radius: 5px;
+
+}
+
+content button
+{
+	
+	height: 30px;
+	border: 2px solid #fff;
+	margin-top: 10px;
+}
+
+.pagination
+{
+	height: 20px;
+	text-align: center;
+}
+.pagination a{
+	color: #00A000 !important;
+	text-decoration: none
+}
+
+.clear
+{
+	clear: both;
+}
+
+#footer
+{
+	background: linear-gradient(to top,snow, black 36%, snow);
+	height: 50px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px;
+	color: #FFFFFF;
+}
+
+#menu a
+{
+	text-decoration: none;
+}
+
+.button-buy
+{
+
+	border: 2px solid black;
+	margin: 5px 0 0 20px;
+	width: 123px;
+	height: 48px;
+	border-radius: 2%;
+	margin-left: 2px;
+}
+button{
+	cursor: pointer;	padding: 4px 20px;
+	height: 40%;
+	color: #fff;
+	background: linear-gradient(to top,snow, black 36%, snow);
+	border: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	box-shadow: 2px 2px 5px #fff5;
+	border-radius: 5px;
+}
+
+button:hover
+{
+	opacity: 1.80;
+	font-weight: bold;
+	transform: scale(1.1);
+
+}
+
+.buy-text
+{
+	/*background-color: silver;*/
+	border: 2px solid black;
+	width: 220px;
+	height: 22px;
+	margin-left: 20px;
+	color: white;
+	padding-left: 15px;
+	background-position: 1px 2px !important;
+	background: darkslategrey url(https://radugamir.kiev.ua/wp-content/uploads/2015/03/icon-address.png) no-repeat center left;
+	background-size: auto 90%;
+	border-radius: 5px;
+}
+
+.footer-text
+{
+	text-align: center;
+}
+

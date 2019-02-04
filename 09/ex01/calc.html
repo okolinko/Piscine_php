@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <title>Java_calc</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 100%;
+            background-image: url(https://www.meme-arsenal.com/memes/d065a12ca62f5b8052f2ae58a501fe61.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
+        }
+        p{
+            color: black;
+            font-family: Arial;
+        }
+        .calc {
+            width: 300px;
+            background-image: url(http://www.dejurka.ru/wp-content/uploads/2009/12/text-47-scarletserpent1.jpg);
+            margin: 25%;
+            padding: 20px 50px 20px 50px;
+            position: relative;
+            box-shadow: 15px 15px 15px #FFffff;
+            margin-left: 20%;
+            border-radius: 10px;
+        }
+        h1{
+            font-family: Arial;
+            color: black;
+        }
+        .inpt{
+            width: 200px;
+            background-color: darkgrey;
+            color: black;
+            box-shadow: 10px 10px 10px #000000;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 4px;
+        }
+        select{
+            background: transparent;
+            width: 50px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            height: 34px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+        .left{
+            margin-left: -26px;
+        }
+    </style>
+</head>
+<body>
+<div class="calc">
+    <center><h1>Калькулятор</h1></center>
+    <p>Число 1: <input class="inpt" type="text" id="n1" required></p>
+ <center>
+     <select required name="oper" id="select">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+     <p class="left">Число 2: <input  class="inpt" type="text" id="n2" required></p>
+    <br>
+    <button class="button" id="btn">Try me!</button>
+ </center>
+</div>
+<script type="text/javascript">
+    setTimeout('alert("Please, use me...")', 30000);
+    document.getElementById('btn').onclick = function () {
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        var sel = document.getElementById('select').value;
+        if (n1 >= 0 && n2 >= 0 && n1 && n2){
+            if (!(n2 == '0' && sel == '/') && (!(n2 == '0' && sel == '%'))) {
+                switch (sel) {
+                    case '+':
+                        alert(parseInt(n1) + parseInt(n2));
+                        console.log(parseInt(n1) + parseInt(n2));
+                        break;
+                    case '-':
+                        alert(parseInt(n1) - parseInt(n2));
+                        console.log(parseInt(n1) - parseInt(n2));
+                        break;
+                    case '*':
+                        alert(parseInt(n1) * parseInt(n2));
+                        console.log(parseInt(n1) * parseInt(n2));
+                        break;
+                    case '/':
+                        alert(parseInt(n1) / parseInt(n2));
+                        console.log(parseInt(n1) / parseInt(n2));
+                        break;
+                    case '%':
+                        alert(parseInt(n1) % parseInt(n2));
+                        console.log(parseInt(n1) % parseInt(n2));
+                        break;
+
+                }
+            }
+            else
+                alert ("It’s over 9000!");
+        }
+        else
+            alert ("Error")
+    }
+</script>
+</body>
+</html>

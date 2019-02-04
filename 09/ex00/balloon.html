@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>Balloon</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 100%;
+            background-image: url(https://www.meme-arsenal.com/memes/d065a12ca62f5b8052f2ae58a501fe61.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
+        }
+        #ball {
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%
+
+        }
+        h1{
+            color: blueviolet;
+            margin-top: 50px;
+            font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+<center><h1>Воздушный шарик &#x1f608</h1></center>
+<center><div id="ball" style="background: red;"></div></center>
+<script>
+    var ball = document.getElementById('ball');
+    ball.onclick = function () {
+        ball.style.width = ball.offsetWidth+10+'px';
+        ball.style.height = ball.offsetHeight+10+'px';
+        if (ball.style.width === '420px')
+        {
+            ball.style.width = '200px';
+            ball.style.height = '200px';
+        }
+        if (ball.style.background === 'green')
+            ball.style.background = 'blue';
+        else if (ball.style.background === 'blue')
+            ball.style.background = 'red';
+        else if (ball.style.background ==='red')
+            ball.style.background = 'green';
+    };
+    ball.onmouseout = function () {
+        if (ball.style.width > '200px')
+        {
+            ball.style.width = ball.offsetWidth - 5 + 'px';
+            ball.style.height = ball.offsetHeight - 5 + 'px';
+        }
+        if (ball.style.background === 'red')
+            ball.style.background = 'blue';
+        else if (ball.style.background === 'blue')
+            ball.style.background = 'green';
+        else if (ball.style.background ==='green')
+            ball.style.background = 'red';
+    };
+</script>
+</body>
+</html>

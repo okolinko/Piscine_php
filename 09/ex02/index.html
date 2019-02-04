@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <title>To do list</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 100%;
+            background-image: url(https://www.meme-arsenal.com/memes/d065a12ca62f5b8052f2ae58a501fe61.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
+        }
+
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 5px;
+            width: 100%;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            color: #b3b3b3;
+            color: rgba(255, 255, 255, 0.3);
+            text-rendering: optimizeLegibility;
+        }
+
+        .todos {
+            width: 400px;
+            margin-top: 180px;
+            background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/61/9556347a63868a6.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 15px;
+            box-shadow: 15px 15px 15px #FFffff;
+        }
+
+        #ft_list{
+            width: 370px;
+        }
+
+        #ft_list:before {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            height: 100%;
+        }
+
+        #ft_list div{
+            padding:10px 40px 10px 60px;
+            line-height: 40px;
+            border-bottom: 1px dotted #ccc;
+            position: relative;
+        }
+
+        #ft_list div:hover:after{
+            content:'x';
+            right: 15px;
+            position:absolute;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        #ft_list div:before{
+            content:"\2714";
+            left: 10px;
+            position:absolute;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        button{
+            margin-top: 10px;
+            width:30%;
+            height:7%;
+            background-color:#b0d4f1;
+            border:0px solid #ffffff;
+            font-size:20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<center>
+<div class="todos">
+    <h1>TO DO</h1>
+    <div id="ft_list"></div>
+    <button onclick="add()">New</button>
+    <script src="todo.js"></script>
+</div>
+</center>
+</body>
+</html>

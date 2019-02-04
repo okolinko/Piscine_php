@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    background-image: url(../ex05/resources/fon2.jpg);
+    background-size: 150%;
+}
+figure {
+    width: 17%;
+    padding: 2%;
+}
+td {
+    border: 1px solid black;
+    border-radius: 0 25%;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.7vw;
+    margin: 0;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 1.7vw;
+    margin: 0;
+}
+
+p {
+    font-size: 1vw;
+    margin: 0;
+}
+table {
+    width:98%;
+    height: auto;
+    border-spacing: 2px;
+    position: relative;
+    table-layout: fixed;
+    margin-left: 3%;
+}
+.mass {
+    text-align:right;
+}
+.mass_centr{
+    text-align: center;
+}
+.void {
+    border: none;
+}
+.yellow {
+    background-color:yellow;
+}
+.blue {
+    background-color: blue;
+}
+.darkviolet {
+    background-color:#8A2BE2;
+}
+.green {
+    background-color:green;
+}
+.grey {
+    background-color: #808080;
+}
+
+.orange {
+    background-color:orange;
+}
+
+.royalblue {
+    background-color: #2E8B57;
+}
+.maroon {
+    background-color: #800000
+}
+.crimson {
+    background-color: #DC143C;
+}
+.purle {
+    background-color: purple;
+}
+.khaki {
+    background-color: #F0E68C
+}
+.centr{
+    margin-left: 40%;
+}

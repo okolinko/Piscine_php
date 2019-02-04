@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Balloon</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <style>
+        body {
+            width: 100%;
+            background-image: url(https://www.meme-arsenal.com/memes/d065a12ca62f5b8052f2ae58a501fe61.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
+        }
+        #circle {
+            margin-top: 150px;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 50%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h1{
+            color: blueviolet;
+            margin-top: 50px;
+            font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+
+        }
+
+    </style>
+</head>
+<script>
+    const color = ["red", "green", "blue"];
+    var balloon;
+    var i = 0;
+    var size = 200;
+    $(document).ready(function() {
+        balloon = $('#circle');
+        balloon.click(circleClick);
+        balloon.mouseleave(circlenHover);
+    });
+    function circlenHover() {
+        size -= 5;
+        if (size < 200) {
+            size = 200;
+        }
+        i--;
+        if (i < 0) {
+            i = 2;
+        }
+        circleRefresh(i);
+    }
+    function circleClick() {
+        size += 10;
+        if (size > 420) {
+            size = 200;
+        }
+        i++;
+        if (i > 2) {
+            i = 0;
+        }
+        circleRefresh(i);
+    }
+    function circleRefresh(i){
+        balloon.css('height', size);
+        balloon.css('width', size);
+        balloon.css('backgroundColor', color[i]);
+    }
+</script>
+<body>
+<center><h1>Воздушный шарик &#x1f608</h1></center>
+<div class="main">
+    <center><div id="circle"></div></center>
+</div>
+</body>
+</html>

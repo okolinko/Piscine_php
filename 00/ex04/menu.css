@@ -1,0 +1,84 @@
+body{
+  width: 100%;
+  height: 100%;
+  font-family:Arial;
+  background-size: 100%;
+    background-image: url(../ex05/resources/fon4.jpg);
+}
+ul{
+  width:100%;
+  height: 20%;
+  margin: auto;
+  margin-top: 2%;
+}
+li{
+  color: white;
+  background-color: #FFFF00;
+  height:auto;
+  text-align: center;
+  position: relative;
+  border-radius: 40px 10px;
+}
+
+.level1 li{
+  display: inline-block;
+  width:10%;
+}
+.level2 li{
+  display: block;
+  width:100%;
+  margin-left:-2px;
+  margin-top: -2%;
+  background-color: #019875;
+}
+.level3 li{
+  display: block;
+  width:100%;
+  margin-left:100%;
+  background-color: #F2784B;
+}
+
+a{
+  text-decoration: none;
+  width:100%;
+  height:100%;
+  display: inline-block;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+a:visited, a:link{
+  color: white;
+}
+ul ul{
+   display: none;
+   position: absolute;
+   padding : 0;
+}
+li:hover ul.level2{
+  display: block;
+}
+.level2 li:hover ul.level3{
+  display:block;
+  margin-top:-20%;
+}
+ul.level1:hover li:hover
+{
+  background: #2E2E2E;
+}
+.purple{
+  background-color: #f4b400;
+  border: 2px solid #F7CA18;
+
+}
+.green{
+  background-color: #1BBC9B;
+  border: 2px solid #019875;
+}
+.orange{
+  background-color: #F2784B;
+  border: 2px solid #F9690E;
+}
+.red{
+  background-color: #D64541;
+  border: 2px solid #F22613;
+}

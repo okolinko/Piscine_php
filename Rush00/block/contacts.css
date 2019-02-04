@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(https://tseh.com.ua/wp-content/uploads/2017/05/CHOR4972-Edit-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+h1 {
+    color: #f1f2f3;
+    font-size: 3em;
+    font-weight: bold;
+}
+p {
+    color: #f1f2f3;
+    font: 1em Georgia, serif;
+}
+div {
+    display: block;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+iframe{
+    box-shadow: 0 0 20px #000000;
+}
